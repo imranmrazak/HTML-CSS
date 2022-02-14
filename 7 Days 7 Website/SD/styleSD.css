@@ -1,0 +1,282 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+
+}
+li {
+    list-style: none;
+}
+
+.header1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: stretch;
+    align-items : center;
+    background-color: rgba(199, 3, 3, 0.685);
+    color: white;
+}
+
+.subheader1{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(49, 48, 48);
+    text-align: center;
+}
+
+.sub2header1{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(49, 48, 48);
+    text-align: center;
+}
+
+.header-a2{
+   background-color: rgb(235, 207, 51);
+   
+}
+
+.header-a1, .header-a2{
+   padding: 5px;
+   width: 100%;
+   color: white;
+   font-size: small;
+}
+
+.header-a1{
+    color: white;
+}
+
+.subheader1:hover .header-a1{
+    background-color: red;
+} 
+
+.subheader1:hover .header-a2{
+    background-color: rgb(248, 225, 93);
+    }
+
+    .sub2header1:hover .header-a1{
+        background-color: red;
+    } 
+    
+    .sub2header1:hover .header-a2{
+        background-color: rgb(248, 225, 93);
+        }
+
+.header2{
+    background-color: rgb(37, 31, 31);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.subheader2{
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr 4fr 4fr;
+}
+
+.subheader2>li>a{
+ color: white;
+ padding: 3px;
+}
+
+.header-input{
+    height: 50px;
+    padding: 0 30px;
+    border-radius: 5px;
+}
+.navigation{
+    display: flex;
+    padding: 10px 0px;
+    justify-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navigation > li{
+    display: flex;
+    padding: 5px;
+}
+
+#sportsDirectLogo {
+    width: 100px;
+    height: 60px;
+}
+
+.main-img{
+    height: 100%;
+    width: 100%;
+}
+
+.topBrandLink{
+    display: none
+}
+
+.topBrandLinkBig{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.main-a{
+    background:         white;
+    display:            inline-block;
+  }
+.main-a >img{
+    vertical-align:     middle;
+    transition:         opacity 0.3s;
+    -webkit-transition: opacity 0.s;
+    opacity: 0.4;
+  }
+.main-a:hover img{
+    opacity: 1;
+  }
+
+#nikeLink{
+      height: 40px;
+  }
+#adidasLink{
+    height: 50px;
+}
+#pumaLink{
+    height: 50px;
+}
+#UALink{
+    height: 50px;
+}
+#asicsLink{
+    height: 40px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    background-color: rgb(31, 29, 29);
+    padding: 50px 0;
+}
+
+.highsubfooter1{
+    display: flex;
+    justify-content: space-around; 
+}
+
+.subfooter1{
+    display: flex;
+    flex-direction: column;
+}
+
+.subfooter1>p{
+    color: white;
+    padding: 10px 0px;
+}
+
+.subfooter1>a{
+    color: white;
+    padding: 5px 0px;
+    font-size: small;
+}
+
+.footer2{
+    background-color: rgb(31, 29, 29);
+    padding: 20px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    font-size: small;
+}
+
+.footer-p{
+    color: gray;
+    font-size: small;
+}
+
+.sub1-footer2, .sub2-footer2{
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-img{
+    height: 40px;
+}
+
+.hamburger-icon, .cart-icon, .main-img2{
+    display: none;
+}
+@media(max-width:1000px){
+
+    .subheader2, .navigation, .main-img, .topBrandLinkBig, .sub2header1, .sub1-footer2{
+      
+        display:none;
+    }
+
+    .header1{
+        display: block;
+    }
+
+    .hamburger-icon{
+        display: block;
+        height: 30px;
+    }
+
+    .cart-icon{
+        display: block;
+        height: 50px; 
+    }
+
+    .main-img2{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .topBrandLink{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 50px;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+        grid-gap: 10px;
+    }
+
+    .main-a{
+    padding: 10px;
+    }
+
+    .footer2{
+        justify-content: center;
+    }
+
+    .highsubfooter1{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    .footer1{
+
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        text-align: left;
+    }
+}

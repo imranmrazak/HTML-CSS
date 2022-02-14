@@ -1,0 +1,276 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li>a{
+    list-style: none;
+    text-decoration: none;
+
+}
+li {
+    list-style: none;
+}
+
+.header1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: stretch;
+    align-items : center;
+    background-color: rgba(199, 3, 3, 0.685);
+    color: white;
+}
+
+.subheader1{
+    border: 1px solid rgb(49, 48, 48);
+    
+}
+
+.sub2-subheader1{
+   background-color: rgb(235, 207, 51);
+}
+
+.subheader1 > li{
+   padding: 5px;
+}
+
+.subheader1 > li>a{
+    color: white;
+}
+
+.subheader1:hover .sub1-subheader1{
+    background-color: red;
+} 
+
+.subheader1:hover .sub2-subheader1{
+    background-color: rgb(248, 225, 93);
+    }
+
+.header2{
+    background-color: rgb(37, 31, 31);
+    display: grid;
+    grid-template-columns: 1fr 5fr 4fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.subheader2{
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr 4fr 4fr;
+}
+
+.subheader>li{
+}
+
+.subheader2>li>a{
+ color: white;
+ padding: 3px;
+}
+
+.navigation{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    padding: 10px 0px;
+    justify-items: center;
+    
+}
+
+.navigation > li{
+    /* border: 1px solid black; */
+    display: flex;
+    padding: 5px;
+    /* justify-self: center;? */
+
+}
+
+#sportsDirectLogo {
+    width: 100px;
+    height: 60px;
+}
+
+.brand{
+    position: absolute;
+}
+.dropdownBrand{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    position: absolute;
+    top: 170px;
+    left: 0px;
+    width: 100%;
+    /* background-color: red; */
+    /* grid-auto-rows: 500px; */
+    display: none;
+}
+
+.Alphabet {
+    padding :10px;
+}
+
+.dropdownBrandItem>li{
+    padding: 4px;
+}
+
+.dropdownMensTitle {
+    padding: 16px;
+}
+
+.dropdownMensSubTitle {
+    padding: 10px;
+}
+
+.dropdownMensItem> li{
+    padding: 4px;
+}
+
+.dropdownMens{
+    display: none;
+    position: absolute;
+    top: 170px;
+    left: 0px;
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: salmon; */
+    /* grid-template-rows: minmax(100px, auto); */
+}
+
+.dropdownMensFootwear{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.dropdownMensClothing{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
+#mainImage1{
+    height: 100%;
+    width: 100%;
+}
+#mainImage2{
+    height: 100%;
+    width: 100%;
+}
+#mainImage3{
+    height: 100%;
+    width: 100%;
+}
+
+.slideshowContainer{
+    position: relative
+}
+.mySlides{
+    display:none;
+}
+
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the next button to the right */
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 1px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.topBrandLink{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    /* background-color: salmon; */
+}
+
+.topBrandLink>a{
+    padding: 10px 60px;
+    /* color: gray;
+    background-color: #000; */
+}
+
+/* .topBrandLink>a>img{
+    background-color: gray;
+    color: gray;
+} */
+
+.topBrandLink>a{
+    background:         white;
+    display:            inline-block;
+  }
+.topBrandLink>a img{
+    vertical-align:     middle;
+    transition:         opacity 0.3s;
+    -webkit-transition: opacity 0.s;
+    opacity: 0.4;
+  }
+.topBrandLink>a:hover img{
+    opacity: 1;
+  }
+
+#nikeLink{
+      height: 40px;
+  }
+#adidasLink{
+    height: 50px;
+}
+#pumaLink{
+    height: 50px;
+}
+#UALink{
+    height: 50px;
+}
+#asicsLink{
+    height: 40px;
+}
